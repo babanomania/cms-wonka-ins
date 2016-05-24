@@ -1,0 +1,11 @@
+templateScript: /WonkaModule/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+title: Dummy page
+dialog: WonkaModule:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: WonkaModule:components/dummy-component
