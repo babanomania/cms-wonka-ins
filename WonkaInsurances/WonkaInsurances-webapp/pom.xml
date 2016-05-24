@@ -81,8 +81,8 @@
     -->
 
     <dependency>
-      <artifactId>WonkaInsurances</artifactId>
       <groupId>com.dchdemo.cms</groupId>
+      <artifactId>WonkaModule</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
 
