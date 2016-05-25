@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/jumbotron-component.ftl
+renderType: freemarker
+title: Jumbotron Component
+dialog: WonkaModule:components/jumbotron-dialog

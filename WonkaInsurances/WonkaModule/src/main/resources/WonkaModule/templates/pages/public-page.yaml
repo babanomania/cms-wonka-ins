@@ -11,5 +11,5 @@ areas:
         id: WonkaModule:components/richtext-component
       panel-row-component:
         id: WonkaModule:components/panel-row-component
-      image-carousel-component:
-        id: WonkaModule:components/image-carousel-component
+      jumbotron-component:
+        id: WonkaModule:components/jumbotron-component

@@ -1,0 +1,24 @@
+form:
+  label: Jumbotron Properties
+  tabs:
+    - name: tabMain
+      label: content
+      fields:
+        - name: jtCaption
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Caption
+        - name: jtTagLine
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Tag Line
+        - name: more_link
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Link to more content
+        - name: more_btn_text
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Button Text to more content
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

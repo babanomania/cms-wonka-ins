@@ -8,7 +8,8 @@
 <head>
     <title>${title}</title>
 
-	[#include "includes/client-lib-imports.ftl" /]
+	[#include "includes/client-lib.ftl" /]
+	
 	[@cms.page /]
 	
 </head>
