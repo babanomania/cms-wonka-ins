@@ -1,0 +1,35 @@
+form:
+  label: Carousel Slide Properties
+  tabs:
+    - name: tabMain
+      label: content
+      fields:
+        - name: panelHeading
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Panel Header
+        - name: panelContent
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Panel Content
+        - name: panelButtonText
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Button Text
+        - name: imageTab
+          label: Slide Image
+          fields:
+            - name: imagePosition
+              label: Position
+              class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+              options:
+                - name: left
+                  label: left
+                  value: left
+                  selected: true
+                - name: right
+                  label: right
+                  value: right
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

@@ -1,0 +1,15 @@
+form:
+  label: Policy Search Properties
+  tabs:
+    - name: tabMain
+      label: content
+      fields:
+        - name: searchHeader
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Search Header
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

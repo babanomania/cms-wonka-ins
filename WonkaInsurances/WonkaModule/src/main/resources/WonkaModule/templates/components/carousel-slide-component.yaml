@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/carousel-slide-component.ftl
+renderType: freemarker
+title: Carousel Slide Component
+dialog: WonkaModule:components/carousel-slide-dialog

@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/policy-search-component.ftl
+renderType: freemarker
+title: Global Policy Search Component
+dialog: WonkaModule:components/policy-search-dialog

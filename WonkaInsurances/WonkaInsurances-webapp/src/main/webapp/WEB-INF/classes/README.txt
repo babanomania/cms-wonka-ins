@@ -8,8 +8,8 @@
                      |___/
 
 
-        24. May 2016
-        v 5.5 (Snapshot: 2016.05.24 09:27:30)
+        25. May 2016
+        v 5.5 (Snapshot: 2016.05.25 09:37:28)
         Community Edition
 
         http://www.magnolia-cms.com/

@@ -4,8 +4,15 @@ visible: true
 title: secure page
 dialog: WonkaModule:pages/secure-page-properties
 areas:
-  main:
+  body_content:
     renderType: freemarker
     availableComponents:
-      dummy-component:
+      richtext-component:
         id: WonkaModule:components/richtext-component
+      policy-search-component:
+        id: WonkaModule:components/policy-search-component
+  sidebar:
+    renderType: freemarker
+    availableComponents:
+      text-panel-component:
+        id: WonkaModule:components/text-panel-component

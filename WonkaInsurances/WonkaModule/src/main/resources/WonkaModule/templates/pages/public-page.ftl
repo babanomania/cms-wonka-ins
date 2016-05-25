@@ -10,15 +10,11 @@
 	[@cms.page /]
 	
 </head>
-<body>
+<body ng-app="wayne-ent-ui">
 
 	[#include "includes/page-header.ftl" /]
 	
-	<div class="filler">&nbsp;</div>
-	
-	<div class="bodycontent">
-		${cmsfn.decode(content).bodycontent!""}
-	</div>
+	[@cms.area name="body_content"/]
 
 	[#include "includes/page-footer.ftl" /]
     

@@ -3,3 +3,13 @@ renderType: freemarker
 visible: true
 title: public page
 dialog: WonkaModule:pages/public-page-properties
+areas:
+  body_content:
+    renderType: freemarker
+    availableComponents:
+      richtext-component:
+        id: WonkaModule:components/richtext-component
+      panel-row-component:
+        id: WonkaModule:components/panel-row-component
+      image-carousel-component:
+        id: WonkaModule:components/image-carousel-component

@@ -1,12 +1,15 @@
 form:
-  label: Dummy page properties
+  label: Text Panel Properties
   tabs:
     - name: tabMain
-      label: Dummy page
+      label: content
       fields:
-        - name: title
+        - name: panelHeading
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-          label: Title
+          label: Panel Header
+        - name: panelContent
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Panel Content
 actions:
   commit:
     class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition

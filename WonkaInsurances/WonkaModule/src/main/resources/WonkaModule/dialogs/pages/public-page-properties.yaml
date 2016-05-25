@@ -24,13 +24,6 @@ form:
             - name: retirement
               value: retirement
               label: Retirement
-        - name: bodycontent
-          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
-          label: Body Content Editor
-          alignment: true
-          fonts: Arial/Arial,sans-serif;Times New Roman/Times New Roman,serif
-          fontSizes: 16/16px;24/24px;48/48px
-          lists: true
         
 actions:
   commit:

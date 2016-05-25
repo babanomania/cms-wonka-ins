@@ -1,0 +1,11 @@
+templateScript: /WonkaModule/templates/components/panel-row-component.ftl
+renderType: freemarker
+title: Panel Row Component
+areas:
+  collumn:
+    renderType: freemarker
+    availableComponents:
+      text-panel-component:
+        id: WonkaModule:components/panel-collumn-component
+      empty-panel-component:
+        id: WonkaModule:components/empty-column-component

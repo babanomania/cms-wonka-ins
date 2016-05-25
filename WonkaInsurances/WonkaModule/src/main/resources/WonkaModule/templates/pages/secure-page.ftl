@@ -12,11 +12,9 @@
 	[@cms.page /]
 	
 </head>
-<body>
+<body ng-app="wayne-ent-ui">
 
 	[#include "includes/page-header.ftl" /]
-	
-	<div class="filler">&nbsp;</div>
 	
 	[#if current_user == public_user]
 	
@@ -24,7 +22,21 @@
 	
 	[#else]
 	
-		[@cms.area name="main"/]
+		<div class="container-fluid">
+	      <div class="row">
+		
+			<div class="col-sm-3 col-md-2 sidebar">
+	          [@cms.area name="sidebar"/]
+	          
+	        </div>
+		
+			<div class="col-sm-9 col-md-10 main">
+				[@cms.area name="body_content"/]
+				
+			</div>
+			
+		  </div>
+		</div>
 	
 	[/#if]
 

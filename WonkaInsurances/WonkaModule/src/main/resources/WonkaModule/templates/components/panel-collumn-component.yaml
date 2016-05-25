@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/panel-collumn-component.ftl
+renderType: freemarker
+title: Rich Text Component
+dialog: WonkaModule:components/text-panel-dialog

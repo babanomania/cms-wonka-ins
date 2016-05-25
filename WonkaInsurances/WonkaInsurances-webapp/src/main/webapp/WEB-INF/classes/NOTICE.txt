@@ -1,4 +1,4 @@
-Magnolia Empty Webapp 5.5 (Snapshot: 2016.05.24 09:27:30)
+Magnolia Empty Webapp 5.5 (Snapshot: 2016.05.25 09:37:28)
 Copyright 2003-2016 Magnolia International Ltd.
 
 This product includes/uses software(s) developed by 'an unknown organization'
@@ -138,9 +138,9 @@ This product includes/uses software(s) developed by 'Google' (http://www.google.
 This product includes/uses software(s) developed by 'Google, Inc.' (http://www.google.com)
   - Gson (http://code.google.com/p/google-gson/)
       License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - Google Guice - Core Library (http://code.google.com/p/google-guice/)
+  - Google Guice - Core Library (https://github.com/google/guice)
       License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - Google Guice - Extensions - MultiBindings (http://code.google.com/p/google-guice/)
+  - Google Guice - Extensions - MultiBindings (https://github.com/google/guice)
       License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 This product includes/uses software(s) developed by 'Joe Walnes, Henri Tremblay, Leonardo Mesquita'

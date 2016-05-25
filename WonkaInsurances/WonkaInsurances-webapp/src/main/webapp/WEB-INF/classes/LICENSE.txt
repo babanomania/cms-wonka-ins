@@ -1,6 +1,6 @@
 ===============================================
 M A G N O L I A (R)
-Magnolia Empty Webapp 5.5 (Snapshot: 2016.05.24 09:27:30)
+Magnolia Empty Webapp 5.5 (Snapshot: 2016.05.25 09:37:28)
 
 License Agreement
 ===============================================

@@ -1,0 +1,10 @@
+templateScript: /WonkaModule/templates/components/image-carousel-component.ftl
+renderType: freemarker
+title: Image Carousel Component
+dialog: WonkaModule:components/carousel-slide-dialog
+areas:
+  slide:
+    renderType: freemarker
+    availableComponents:
+      carousal-slide-component:
+        id: WonkaModule:components/carousel-slide-component

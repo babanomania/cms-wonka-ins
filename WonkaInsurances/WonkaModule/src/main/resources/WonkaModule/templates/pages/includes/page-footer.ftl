@@ -1,3 +1,5 @@
+	<div class="filler-bottom">&nbsp;</div>
+
 	<footer class="footer">
       <div class="container pull-left">
         
