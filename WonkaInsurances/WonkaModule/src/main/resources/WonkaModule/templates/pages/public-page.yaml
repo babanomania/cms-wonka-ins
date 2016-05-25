@@ -1,0 +1,5 @@
+templateScript: /WonkaModule/templates/pages/public-page.ftl
+renderType: freemarker
+visible: true
+title: public page
+dialog: WonkaModule:pages/public-page-properties

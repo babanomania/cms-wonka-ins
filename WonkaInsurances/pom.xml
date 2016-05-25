@@ -10,6 +10,9 @@
   <properties>
     <magnoliaVersion>5.5-SNAPSHOT</magnoliaVersion>
     <javaVersion>1.8</javaVersion>
+    <resourcesVersion>2.4.5</resourcesVersion>
+    <purVersion>2.5.2</purVersion>
+    <damVersion>2.1.5-SNAPSHOT</damVersion>
   </properties>
 
   <!-- Fill the following in, so you can use the release plugin -->
@@ -51,6 +54,25 @@
         <version>4.11</version>
         <scope>test</scope>
       </dependency>
+      
+      <dependency>
+      	<groupId>info.magnolia.resources</groupId>
+      	<artifactId>magnolia-resources</artifactId>
+      	<version>${resourcesVersion}</version>
+      </dependency>
+      
+      <dependency>
+      	<groupId>info.magnolia.dam</groupId>
+      	<artifactId>magnolia-dam</artifactId>
+      	<version>${damVersion}</version>
+      </dependency>
+      
+      <dependency>
+      	<groupId>info.magnolia</groupId>
+      	<artifactId>magnolia-module-public-user-registration</artifactId>
+      	<version>${purVersion}</version>
+      </dependency>
+      
     </dependencies>
   </dependencyManagement>
 

@@ -1,0 +1,29 @@
+form:
+  label: Public Page Properties
+  tabs:
+    - name: tabMain
+      label: public page
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Title
+        - name: menu_current
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Page Menu
+          options:
+            - name: home
+              value: home
+              selected: true
+              label: Home
+            - name: policy
+              value: policy
+              label: My Policies
+            - name: login
+              value: login
+              label: Customer Login
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

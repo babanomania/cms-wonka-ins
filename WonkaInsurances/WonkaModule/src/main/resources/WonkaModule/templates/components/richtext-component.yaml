@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/richtext-component.ftl
+renderType: freemarker
+title: Rich Text Component
+dialog: WonkaModule:components/richtext-dialog

@@ -1,0 +1,11 @@
+templateScript: /WonkaModule/templates/pages/secure-page.ftl
+renderType: freemarker
+visible: true
+title: secure page
+dialog: WonkaModule:pages/secure-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: WonkaModule:components/richtext-component

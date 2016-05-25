@@ -1,0 +1,39 @@
+form:
+  label: Public Page Properties
+  tabs:
+    - name: tabMain
+      label: public page
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Title
+        - name: menu_current
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Page Menu
+          options:
+            - name: home
+              value: home
+              selected: true
+              label: Home
+            - name: customer
+              value: customer
+              label: Customer Center
+            - name: living
+              value: living
+              label: Healthy Living
+            - name: retirement
+              value: retirement
+              label: Retirement
+        - name: bodycontent
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Body Content Editor
+          alignment: true
+          fonts: Arial/Arial,sans-serif;Times New Roman/Times New Roman,serif
+          fontSizes: 16/16px;24/24px;48/48px
+          lists: true
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
