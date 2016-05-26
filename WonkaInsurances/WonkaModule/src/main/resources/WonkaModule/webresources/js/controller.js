@@ -27,7 +27,13 @@ app.controller("GetPolicyData", function($scope, $http, $resource) {
         	if(response.status === 404) {
         		$scope.errorMessage = "Policy Not Found"
             }else{
-            	$scope.errorMessage = response;
+            	
+            	if( response.message == null ){
+            		$scope.errorMessage = "Server Error";
+            		
+            	}else{
+            		$scope.errorMessage = response.message;
+            	}
             }
         	
         });
