@@ -11,7 +11,7 @@
 	[@cms.page /]
 	
 </head>
-<body ng-app="wayne-ent-ui">
+<body ng-app="wayne-ent-ui" >
 
 	[#include "includes/page-header.ftl" /]
 	

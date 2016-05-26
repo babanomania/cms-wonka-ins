@@ -9,6 +9,8 @@
 	
 			<div class="well">
 			
+				<input type="hidden" id="urlPrefix" ng-model="urlPrefix" value="${ctx.contextPath}" />
+			
 				<label for="policyNum" >Policy Number</label>
 				<input id="policyNum" type="text" class="form-control" style="width:30%;" ng-model="policyNum"> &nbsp; <br/>
 				
@@ -25,6 +27,10 @@
 			</div>
 	
 			<br/>
+			
+			<div class="alert alert-danger" style="width:90%;" ng-show="showError">
+				{{errorMessage}}
+			</div>
 			
 			<table class="table table-striped"  ng-show="showData">
 				
