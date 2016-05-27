@@ -13,7 +13,6 @@
     <resourcesVersion>2.4.5</resourcesVersion>
     <purVersion>2.5.2</purVersion>
     <damVersion>2.1.5-SNAPSHOT</damVersion>
-    <warFileName>${project.artifactId}</warFileName>
   </properties>
 
   <!-- Fill the following in, so you can use the release plugin -->
@@ -79,7 +78,6 @@
 
 
   <build>
-  	<finalName>${warFileName}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -90,27 +88,6 @@
           <target>${javaVersion}</target>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.3</version>
-        <executions>
-            <execution>
-                <phase>package</phase>
-                <goals><goal>copy</goal></goals>
-                <configuration>
-                    <artifactItems>
-                        <artifactItem>
-                            <groupId>com.github.jsimone</groupId>
-                            <artifactId>webapp-runner</artifactId>
-                            <version>8.0.30.2</version>
-                            <destFileName>webapp-runner.jar</destFileName>
-                        </artifactItem>
-                    </artifactItems>
-                </configuration>
-            </execution>
-        </executions>
-        </plugin>
     </plugins>
 
     <!-- default resources configuration which will filter your module descriptors -->
