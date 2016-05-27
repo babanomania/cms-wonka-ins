@@ -129,6 +129,10 @@
 		              <directory>WonkaInsurances-webapp/target/war</directory>
 		              <directory>WonkaInsurances-webapp/target/war</directory>
 		              <directory>WonkaInsurances-webapp/src/main/webapp/WEB-INF/lib</directory>
+		              <excludes>
+		              	<exclude>**/webapp-runner.jar</exclude>
+		              	<exclude>**/*.war</exclude>
+		              </excludes>
 		            </fileset>
 		           </filesets>
 		         </configuration>
