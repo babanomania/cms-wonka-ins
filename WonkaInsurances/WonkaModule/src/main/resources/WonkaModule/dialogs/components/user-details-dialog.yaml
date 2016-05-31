@@ -1,0 +1,21 @@
+form:
+  label: User Details Properties
+  tabs:
+    - name: tabMain
+      label: content
+      fields:
+        - name: searchHeader
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Page Header
+        - name: goGreenMessage
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Go Green Message
+        - name: goGreenBtnTxt
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Go Green Button Txt
+        
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

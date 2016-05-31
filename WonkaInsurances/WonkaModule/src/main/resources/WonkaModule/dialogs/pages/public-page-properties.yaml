@@ -9,7 +9,7 @@ form:
           label: Title
         - name: menu_current
           class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
-          label: Page Menu
+          label: Page Type
           options:
             - name: home
               value: home

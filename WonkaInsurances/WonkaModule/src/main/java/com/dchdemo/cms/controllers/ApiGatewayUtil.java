@@ -1,19 +1,16 @@
 package com.dchdemo.cms.controllers;
 
-import java.io.IOException;
-
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPut;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
 
 public class ApiGatewayUtil {
 
 	private static String urlGateway;
+	private static CommonResponseHandler responseHandler = new CommonResponseHandler();
 	
 	static{
 		init();
@@ -33,26 +30,23 @@ public class ApiGatewayUtil {
     	HttpGet httpget = new HttpGet( urlGateway + uri );
     	httpget.addHeader("Accept", "application/json");
     	
-    	// Create a custom response handler
-        ResponseHandler<String> responseHandler = new ResponseHandler<String>() {
-
-            @Override
-            public String handleResponse( final HttpResponse response	) throws ClientProtocolException, IOException {
-                int status = response.getStatusLine().getStatusCode();
-                if (status >= 200 && status < 300) {
-                	
-                    HttpEntity entity = response.getEntity();
-                    return entity != null ? EntityUtils.toString(entity) : null;
-                    
-                } else {
-                    throw new ClientProtocolException("Unexpected response status: " + status);
-                }
-            }
-
-        };
-
         String responseBody = httpclient.execute(httpget, responseHandler);
         return responseBody;
     	
     }
+	
+	public static String putDataToGateway( String uri, String jsonBody ) throws Exception {
+    	
+    	CloseableHttpClient httpclient = HttpClients.createDefault();
+    	HttpPut httpput = new HttpPut( urlGateway + uri );
+    	httpput.addHeader("Accept", "application/json");
+    	
+    	HttpEntity entity = new StringEntity(jsonBody);
+    	httpput.setEntity(entity);
+
+        String responseBody = httpclient.execute( httpput, responseHandler );
+        return responseBody;
+    	
+    }
+	
 }

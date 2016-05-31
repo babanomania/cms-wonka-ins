@@ -11,6 +11,8 @@ areas:
         id: WonkaModule:components/richtext-component
       policy-search-component:
         id: WonkaModule:components/policy-search-component
+      user-details-component:
+        id: WonkaModule:components/user-details-component
   sidebar:
     renderType: freemarker
     availableComponents:

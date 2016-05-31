@@ -8,6 +8,7 @@
 [#assign path_living = "${ctx.contextPath}/public/living.html"]
 [#assign path_retirement = "${ctx.contextPath}/public/retirement.html"]
 
+[#assign path_userdetails = "${ctx.contextPath}/user.html"]
 [#assign path_policies = "${ctx.contextPath}/secure.html"]
 [#assign path_current = cmsfn.link(cmsfn.page(content))! ]
 
@@ -42,8 +43,8 @@
 	        <li><a class="small" href="${path_policies}">Policies</a></li>
 	        
 	        [#else]
-	        <li><a class="small" href="#">${current_user}</a></li>
-	        <li><a class="small" href="${path_policies}">Policies</a></li>
+	        <li [#if menu_current == 'userdetails']class="active"[/#if]><a class="small" href="${path_userdetails}">${current_user}</a></li>
+	        <li [#if menu_current == 'policies']class="active"[/#if]><a class="small" href="${path_policies}">Policies</a></li>
 	        <li><a class="small" href="${path_current}?mgnlLogout">Logout</a></li>
 	        
 	        [/#if]

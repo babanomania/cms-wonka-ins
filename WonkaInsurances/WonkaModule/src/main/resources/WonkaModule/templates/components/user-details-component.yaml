@@ -1,0 +1,4 @@
+templateScript: /WonkaModule/templates/components/user-details-component.ftl
+renderType: freemarker
+title: User Details Component
+dialog: WonkaModule:components/user-details-dialog
