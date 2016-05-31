@@ -81,7 +81,7 @@ app.controller("GetCustomerData", function($scope, $http, $resource) {
         	console.log( response );
         	
         	if(response.status === 404) {
-        		$scope.errorMessage = "Customwr Data Not Found"
+        		$scope.errorMessage = "Customer Data Not Found"
             }else{
             	
             	if( response.message == null ){
@@ -110,7 +110,7 @@ app.controller("GetCustomerData", function($scope, $http, $resource) {
 			  function(resp, headers){
                 console.log(resp);
                 $scope.showGoGreen = false;
-                alert( "showGoGreen + " $scope.showGoGreen );
+                alert( "showGoGreen " + $scope.showGoGreen );
                 
               },function(err){
             	  
