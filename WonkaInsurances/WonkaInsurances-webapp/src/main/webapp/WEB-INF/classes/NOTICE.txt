@@ -1,4 +1,4 @@
-Magnolia Empty Webapp 5.5 (Snapshot: 2016.05.31 07:45:45)
+Magnolia Empty Webapp 5.5 (Snapshot: 2016.06.01 09:58:02)
 Copyright 2003-2016 Magnolia International Ltd.
 
 This product includes/uses software(s) developed by 'an unknown organization'

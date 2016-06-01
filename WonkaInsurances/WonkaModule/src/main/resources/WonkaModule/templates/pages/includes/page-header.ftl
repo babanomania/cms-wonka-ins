@@ -8,7 +8,7 @@
 [#assign path_living = "${ctx.contextPath}/public/living.html"]
 [#assign path_retirement = "${ctx.contextPath}/public/retirement.html"]
 
-[#assign path_userdetails = "${ctx.contextPath}/user.html"]
+[#assign path_userdetails = "${ctx.contextPath}/secure/user.html"]
 [#assign path_policies = "${ctx.contextPath}/secure.html"]
 [#assign path_current = cmsfn.link(cmsfn.page(content))! ]
 

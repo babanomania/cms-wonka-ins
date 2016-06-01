@@ -66,9 +66,6 @@ app.controller("GetCustomerData", function($scope, $http, $resource) {
         	$scope.showData = true;
         	$scope.showError = false;
         	
-        	alert( "statementInEmail -> " + $scope.customerdata.statementInEmail );
-        	alert( "check -> " + ($scope.customerdata.statementInEmail == "Yes") )
-        	
         	if( $scope.customerdata.statementInEmail == "Yes" ){
         		$scope.showGoGreen = false;
         	}else{
@@ -100,10 +97,10 @@ app.controller("GetCustomerData", function($scope, $http, $resource) {
     
     $scope.goPaperless = function() {
     	
-    	$scope.customerdata.firstname.statementInEmail = "Yes"
+    	$scope.customerdata.statementInEmail = "Yes"
     	var urlPrefix = document.getElementById('urlPrefix').value;
     	var postUrl =  urlPrefix + '/.api/customer';
-        var CustomerEntity = $resource( $postUrl );
+        var CustomerEntity = $resource( postUrl );
     	
         CustomerEntity.save( $scope.customerdata,
         		
