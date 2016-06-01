@@ -4,18 +4,27 @@ html {
   min-height: 100%;
 }
 
+html,body {
+    height:100%;
+    width: 100%;
+}
+
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  display: table;
+}
+
+.container {
+    height: auto;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: #f5f5f5;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: table-row;
+  height: 1px;
 }
 
 .filler-top{

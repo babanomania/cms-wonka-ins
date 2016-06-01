@@ -9,20 +9,28 @@
 	
 			<div class="well">
 			
-				<input type="hidden" id="urlPrefix" ng-model="urlPrefix" value="${ctx.contextPath}" />
-			
-				<label for="policyNum" >Policy Number</label>
-				<input id="policyNum" type="text" class="form-control" style="width:30%;" ng-model="policyNum"> &nbsp; <br/>
-				
-				<button type="button" class="btn btn-default" ng-click="getData()" aria-label="Left Align">
-		  			<span class="glyphicon glyphicon-option-vertical glyphicon-align-left" aria-hidden="true"> Search &nbsp; </span>
-				</button>
-				
-				&nbsp;
-				
-				<button type="button" class="btn btn-default" ng-click="reset()" aria-label="Left Align">
-		  			<span class="glyphicon glyphicon-remove-circle glyphicon-align-left" aria-hidden="true"> Clear &nbsp; </span>
-				</button>
+				<div class="row">
+					<div class="col-md-4">	
+					
+						<input type="hidden" id="urlPrefix" ng-model="urlPrefix" value="${ctx.contextPath}" />
+					
+						<label for="policyNum">Policy Number</label>
+						<input id="policyNum" type="text" class="form-control" ng-model="policyNum"> &nbsp; <br/>
+						
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-default" ng-click="getData()" aria-label="Left Align">
+					  			<span class="glyphicon glyphicon-option-vertical glyphicon-align-left" aria-hidden="true"> Search &nbsp; </span>
+							</button>
+						</div>
+						
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-default" ng-click="reset()" aria-label="Left Align">
+					  			<span class="glyphicon glyphicon-remove-circle glyphicon-align-left" aria-hidden="true"> Clear &nbsp; </span>
+							</button>
+						</div>
+					
+					</div>
+				</div>
 			
 			</div>
 	
